@@ -1,0 +1,30 @@
+
+
+ <app-navbar> </app-navbar>
+    <h1 class="text-center lead">Assignments </h1>
+  <div class="container">
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Assignment Name</th>
+      <th scope="col">Submission</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let assignment of assignments">
+    <tr>
+      <input type="hidden" value={{assignment.id}}>
+        <td>{{assignment.name}}</td>
+        <td><a routerLink="/homework"><button [class.selected]="assignment === selectedAssignment" (click)="onSelect(assignment); newMessage();" type="button" class="btn btn-danger btn-sm">View Assignment</button></a></td>
+        <td>{{assignment.description}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<!-- <div *ngFor="let assignment of assignments">
+<li>{{assignment.title}} {{assignment.description}} </li>
+</div> -->
+
+
+<app-footer> </app-footer>

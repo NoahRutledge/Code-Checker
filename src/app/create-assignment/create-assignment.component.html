@@ -1,0 +1,38 @@
+
+<app-navbar></app-navbar>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h2>Please Fill out these Fields</h2>
+
+<form method = "post" action="/assignment-view">
+
+  <div class="container">
+    <label for="name"><b>Assignment Name</b></label>
+    <input id="name" type="text" placeholder="Enter Assignment Name" name="name" required>
+
+    <label for="description"><b>Description</b></label>
+    <input id="description" type="text" placeholder="Enter Description" name="description" required>
+
+    <label for="input"><b>Input</b></label>
+    <textarea id="input" type="text" placeholder="Input Sample" name="input" rows="5" cols="80"></textarea>
+
+    <label for="output"><b>Output</b></label>
+    <textarea id="output" type="text" placeholder="Output Sample" name="output" rows="5" cols="80"></textarea>
+
+    <button id="submitButton" type="submit">Create Assignment</button>
+    <!-- (click)="goBack()" -->
+  </div>
+
+</form>
+
+</body>
+</html>
+
+<!-- <app-footer></app-footer> -->

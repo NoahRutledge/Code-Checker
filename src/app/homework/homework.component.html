@@ -1,0 +1,41 @@
+
+<!-- <div class="container">
+<header>
+   <h1>Hello World</h1>
+</header>
+<article>
+  <h1>Hello World</h1>
+  <br>
+  <p>You just installed everything you need for the assignment. Now all you
+   to do is make it alive!</p>
+   <p>Write a program that makes it print "Hello World"</p>
+</article>
+</div> -->
+<app-navbar> </app-navbar>
+  <div class="card">
+  <h5 class="card-header text-center">{{name}} {{problemid}}</h5>
+  <div class="card-body">
+    <h5 class="card-title text-center">{{desc}}</h5>
+
+       <h5 class="card-title"><strong>Input</strong></h5>
+       <p class="card-text">{{input}}</p>
+        <h5 class="card-title"><strong>Output</strong></h5>
+    <p class="card-text">{{output}}</p>
+  </div>
+  <div class="card-body">
+    <div class="input-group">
+      <div class="custom-file">
+          <input type="file" class="form-control" name="file" ng2FileSelect [uploader]="uploader"/>
+        <!-- <label class="custom-file-label">Choose file</label> -->
+      </div>
+      <!-- <div class="input-group-append"> -->
+        <button type="button" class="btn btn-primary btn-m" (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">Submit Assignment</button>
+      <!-- </div> -->
+    </div>
+</div>
+
+</div>
+
+
+
+<app-footer> </app-footer>

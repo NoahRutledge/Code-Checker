@@ -1,0 +1,31 @@
+
+
+
+<!-- <div class="form-group"> -->
+   <!-- <label for="single">single</label> -->
+   <!-- <input type="file" class="form-control" name="file" ng2FileSelect [uploader]="uploader" />
+   <button type="button" class="btn btn-success btn-s" (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">
+      Upload with ng-2 file uploader
+</button>
+</div> -->
+
+  <!-- <a href="#" class="btn btn-primary">Upload</a> -->
+<!-- Upload with ng-2 file uploader -->
+  <!-- <label for="single">Upload</label> -->
+<!-- <div class="card">
+  <div class="card-body">
+
+    <input type="file" class="form-control" name="file" ng2FileSelect [uploader]="uploader"/>
+    <button type="button" class="btn btn-primary" (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">Submit Assignment</button>
+  </div>
+</div> -->
+
+<div class="input-group">
+  <div class="custom-file">
+      <input type="file" class="form-control" name="file" ng2FileSelect [uploader]="uploader"/>
+    <!-- <label class="custom-file-label">Choose file</label> -->
+  </div>
+  <!-- <div class="input-group-append"> -->
+    <button type="button" class="btn btn-primary btn-m" (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">Submit Assignment</button>
+  <!-- </div> -->
+</div>

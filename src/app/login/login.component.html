@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h2>Please Login</h2>
+
+<form action="">
+  <div class="imgcontainer">
+    <img src="../assets/img/agile.png" style = "height: 220px;">
+  </div>
+
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="signup"><a routerLink="/signup">Sign Up</a></button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+    <a routerLink="/assignment-view">Login Test Link</a>
+    <a routerLink="/upload">upload Test Link</a>
+  </div>
+</form>
+
+</body>
+</html>

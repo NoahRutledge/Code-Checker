@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h2>Please create your user account</h2>
+
+<form method = "post" action="/signup">
+  <div class="imgcontainer">
+    <img src="../assets/img/agile.png" style = "height: 220px;">
+  </div>
+
+  <div class="container">
+    <label for="fname"><b>Please Enter Your Full Name</b></label>
+    <input id="fname" type="text" placeholder="Enter Full Name" name="name" required>
+
+    <label for="uname"><b>Username</b></label>
+    <input id="uname" type="text" placeholder="Enter Desired Username" name="uname" required>
+
+    <label for="email"><b>Email</b></label>
+    <input id="email" type="email" placeholder="Enter Your Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw2"><b>Please Enter Password Again</b></label>
+    <input id="psw2" type="password" placeholder="Enter Password" name="psw2" required>
+
+    <button id="submitButton" type="submit">Sign-Up</button>
+    <!-- (click)="goBack()" -->
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <span class="psw">Forgot <a href="#">password?</a></span>
+    <a routerLink="/assignment-view">Login Test Link</a>
+  </div>
+</form>
+
+</body>
+</html>
